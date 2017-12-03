@@ -8,6 +8,8 @@
 
 #import "MessagesViewController.h"
 
+// react
+#import <React/RCTRootView.h>
 
 @interface MessagesViewController ()
 
@@ -61,16 +63,62 @@
     // Use this to clean up state related to the deleted message.
 }
 
--(void)willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle {
-    // Called before the extension transitions to a new presentation style.
-    
-    // Use this method to prepare for the change in presentation style.
-}
 
 -(void)didTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle {
     // Called after the extension transitions to a new presentation style.
     
     // Use this method to finalize any behaviors associated with the change in presentation style.
+}
+
+-(void) willBecomeActiveWithConversation:(MSConversation*)conversation {
+    [super willBecomeActiveWithConversation:conversation];
+    [self presentReactNativeView:self.presentationStyle];
+}
+
+-(void) willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle {
+    // Called before the extension transitions to a new presentation style.
+    // Use this method to prepare for the change in presentation style.
+    [self presentReactNativeView:presentationStyle];
+}
+-(void) presentReactNativeView:(MSMessagesAppPresentationStyle)presentationStyle {
+    // If you need you can pass the presentation style to your view
+    RCTRootView *rootView = [
+                             [RCTRootView alloc] initWithBridge:[self getBridge]
+                             moduleName: @"Amazin   gMessageExtension"
+                             initialProperties: @{
+                                                  @"presentationStyle": @(presentationStyle),
+                                                  }
+                             ];
+    UIViewController *vc = [UIViewController new];
+    vc.view = rootView;
+    for (UIViewController* cc in self.childViewControllers) {
+        [cc willMoveToParentViewController:nil];
+        [cc.view removeFromSuperview];
+        [cc removeFromParentViewController];
+    }
+    [self addChildViewController:vc];
+    vc.view.frame = self.view.bounds;
+    [self.view addSubview:vc.view];
+    [vc didMoveToParentViewController:self];
+}
+
+-(RCTBridge*) getBridge {
+    static dispatch_once_t once;
+    static id bridge;
+    dispatch_once(&once, ^{
+        NSURL *jsCodeLocation;
+#if DEBUG
+        jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
+#else
+        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
+        bridge = [
+                  [RCTBridge alloc] initWithBundleURL:jsCodeLocation
+                  moduleProvider:nil
+                  launchOptions:nil
+                  ];
+    });
+    return bridge;
 }
 
 @end

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E891113C8D21B00477C6AF8 /* libPods-Bollywood MessagesExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F4F2FF88AAFB3113FF263A /* libPods-Bollywood MessagesExtension.a */; };
+		AB06B7D41FD3BE7700AC7561 /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = ABC4CD901FD3A9A1008F8E15 /* index.ios.js */; };
 		AB4D2EB81FD397010064837A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4D2EB71FD397010064837A /* Assets.xcassets */; };
 		AB4D2EBF1FD397010064837A /* Bollywood MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB4D2EBE1FD397010064837A /* Bollywood MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB4D2EC41FD397010064837A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4D2EC31FD397010064837A /* Messages.framework */; };
 		AB4D2EC81FD397010064837A /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4D2EC71FD397010064837A /* MessagesViewController.m */; };
 		AB4D2ECB1FD397010064837A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D2EC91FD397010064837A /* MainInterface.storyboard */; };
 		AB4D2ECD1FD397010064837A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4D2ECC1FD397010064837A /* Assets.xcassets */; };
+		D7AF1AD79C864B7C97C6857C /* libPods-Bollywood.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12068CF796B7F2812FE0568C /* libPods-Bollywood.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		037D16F42C095C9B2D489BF6 /* Pods-Bollywood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bollywood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bollywood/Pods-Bollywood.debug.xcconfig"; sourceTree = "<group>"; };
+		12068CF796B7F2812FE0568C /* libPods-Bollywood.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bollywood.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D092F8EC758FB9E4A077B91 /* Pods-Bollywood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bollywood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bollywood/Pods-Bollywood.release.xcconfig"; sourceTree = "<group>"; };
+		5062B25AD46C0BB0544343AD /* Pods-Bollywood MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bollywood MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bollywood MessagesExtension/Pods-Bollywood MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
 		AB4D2EB41FD397010064837A /* Bollywood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bollywood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4D2EB71FD397010064837A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4D2EB91FD397010064837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +57,9 @@
 		AB4D2ECA1FD397010064837A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AB4D2ECC1FD397010064837A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4D2ECE1FD397010064837A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC4CD901FD3A9A1008F8E15 /* index.ios.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
+		C4F4F2FF88AAFB3113FF263A /* libPods-Bollywood MessagesExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bollywood MessagesExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE6FABC51BD84336436EFEB /* Pods-Bollywood MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bollywood MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bollywood MessagesExtension/Pods-Bollywood MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +68,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4D2EC41FD397010064837A /* Messages.framework in Frameworks */,
+				9E891113C8D21B00477C6AF8 /* libPods-Bollywood MessagesExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E12C762C64C87A12A06AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AF1AD79C864B7C97C6857C /* libPods-Bollywood.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17601E942984CE6536A33D27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				037D16F42C095C9B2D489BF6 /* Pods-Bollywood.debug.xcconfig */,
+				2D092F8EC758FB9E4A077B91 /* Pods-Bollywood.release.xcconfig */,
+				FBE6FABC51BD84336436EFEB /* Pods-Bollywood MessagesExtension.debug.xcconfig */,
+				5062B25AD46C0BB0544343AD /* Pods-Bollywood MessagesExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AB4D2EAD1FD397010064837A = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +101,7 @@
 				AB4D2EC51FD397010064837A /* Bollywood MessagesExtension */,
 				AB4D2EC21FD397010064837A /* Frameworks */,
 				AB4D2EB51FD397010064837A /* Products */,
+				17601E942984CE6536A33D27 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				AB4D2EC31FD397010064837A /* Messages.framework */,
+				12068CF796B7F2812FE0568C /* libPods-Bollywood.a */,
+				C4F4F2FF88AAFB3113FF263A /* libPods-Bollywood MessagesExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +136,7 @@
 		AB4D2EC51FD397010064837A /* Bollywood MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ABC4CD901FD3A9A1008F8E15 /* index.ios.js */,
 				AB4D2EC61FD397010064837A /* MessagesViewController.h */,
 				AB4D2EC71FD397010064837A /* MessagesViewController.m */,
 				AB4D2EC91FD397010064837A /* MainInterface.storyboard */,
@@ -119,8 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB4D2ED51FD397010064837A /* Build configuration list for PBXNativeTarget "Bollywood" */;
 			buildPhases = (
+				B065D744A33A7C11FBD3D062 /* [CP] Check Pods Manifest.lock */,
 				AB4D2EB21FD397010064837A /* Resources */,
 				AB4D2ED41FD397010064837A /* Embed App Extensions */,
+				F6E12C762C64C87A12A06AFC /* Frameworks */,
+				C49470BC1D5EF39080396758 /* [CP] Embed Pods Frameworks */,
+				D57EA95E8B8E20F4700D19F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB4D2ED11FD397010064837A /* Build configuration list for PBXNativeTarget "Bollywood MessagesExtension" */;
 			buildPhases = (
+				DB0038A25F07CA558A707EB8 /* [CP] Check Pods Manifest.lock */,
 				AB4D2EBA1FD397010064837A /* Sources */,
 				AB4D2EBB1FD397010064837A /* Frameworks */,
 				AB4D2EBC1FD397010064837A /* Resources */,
+				5A114582A6E226AB12D6DDEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,11 +241,96 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4D2ECD1FD397010064837A /* Assets.xcassets in Resources */,
+				AB06B7D41FD3BE7700AC7561 /* index.ios.js in Resources */,
 				AB4D2ECB1FD397010064837A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A114582A6E226AB12D6DDEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bollywood MessagesExtension/Pods-Bollywood MessagesExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B065D744A33A7C11FBD3D062 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bollywood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49470BC1D5EF39080396758 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bollywood/Pods-Bollywood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57EA95E8B8E20F4700D19F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bollywood/Pods-Bollywood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0038A25F07CA558A707EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bollywood MessagesExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB4D2EBA1FD397010064837A /* Sources */ = {
@@ -344,36 +469,57 @@
 		};
 		AB4D2ED21FD397010064837A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE6FABC51BD84336436EFEB /* Pods-Bollywood MessagesExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79HG6Q73U6;
 				INFOPLIST_FILE = "Bollywood MessagesExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"React\"",
+					"-l\"stdc++\"",
+					"-l\"yoga\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = madfrog.Bollywood.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AB4D2ED31FD397010064837A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5062B25AD46C0BB0544343AD /* Pods-Bollywood MessagesExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79HG6Q73U6;
 				INFOPLIST_FILE = "Bollywood MessagesExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"React\"",
+					"-l\"stdc++\"",
+					"-l\"yoga\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = madfrog.Bollywood.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AB4D2ED61FD397010064837A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037D16F42C095C9B2D489BF6 /* Pods-Bollywood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,6 +533,7 @@
 		};
 		AB4D2ED71FD397010064837A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D092F8EC758FB9E4A077B91 /* Pods-Bollywood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

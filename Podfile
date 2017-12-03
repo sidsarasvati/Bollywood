@@ -20,7 +20,8 @@ target 'Bollywood MessagesExtension' do
     'RCTText',
     'RCTNetwork',
     'RCTImage',        
-    'RCTWebSocket', # needed for debugging
+    'RCTWebSocket', # needed for debugging 
+    'BatchedBridge',
     # Add any other subspecs you want to use in your project
   ]
   
