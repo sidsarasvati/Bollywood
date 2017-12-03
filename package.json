@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/sidsarasvati/Bollywood#readme",
   "dependencies": {
-    "react": "~15.2.0",
-    "react-native": "^0.30.0"
+    "react": "^16.2.0",
+    "react-native": "^0.50.4"
   }
 }
